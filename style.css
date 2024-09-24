@@ -21,6 +21,143 @@
   --font-fraunces: "Fraunces", serif;
 }
 
-html {
-  font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Cream);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  /* max-width: 475px; */
+  /* min-height: 355px; */
+  max-width: 475px;
+  min-height: fit-content;
+  background-color: var(--White);
+  display: flex;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+  border-radius: 8px;
+
+  font-family: var(--font-montserrat);
+  color: var(--Dark-grayish-blue);
+}
+
+figure {
+  width: 100%;
+  background-image: url("images/image-product-desktop.jpg");
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+section {
+  width: 100%;
+  min-height: fit-content;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+section h1,
+section h2,
+span {
+  font-family: var(--font-fraunces);
+}
+
+section h1 {
+  /* font-size: 1.8rem; */
+  font-size: 26px;
+  line-height: 1;
+  margin-right: 20px;
+  color: var(--Very-dark-blue);
+}
+
+section h2 {
+  color: var(--Dark-cyan);
+}
+
+.top-text {
+  font-size: 0.625rem;
+  letter-spacing: 4px;
+}
+
+.para {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  margin-right: 25px;
+  word-spacing: 2px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-size: 0.75rem;
+  text-decoration: line-through;
+  margin-right: 45px;
+}
+
+section a {
+  background-color: var(--Dark-cyan);
+  text-decoration: none;
+  text-align: center;
+  color: var(--White);
+  font-size: 0.8rem;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: var(--font-fraunces);
+}
+
+section a img {
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+section a:hover {
+  background-color: hsl(156, 42%, 18%);
+}
+
+/* responsive */
+@media (max-width: 550px) {
+  main {
+    max-width: 345px;
+    flex-direction: column;
+    margin: 24px;
+  }
+
+  figure {
+    min-height: 230px;
+    border-radius: 8px 8px 0px 0;
+    background-position-y: 46%;
+  }
+
+  section {
+    gap: 16px;
+  }
+
+  section h1 {
+    font-size: 1.875rem;
+  }
+
+  .para {
+    font-size: 14px;
+    word-spacing: 3px;
+  }
+
+  .price span {
+    margin-right: 120px;
+  }
 }
