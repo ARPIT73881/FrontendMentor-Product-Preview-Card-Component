@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/* Weights: 500 , 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+/* Weights:  700 */
+
+:root {
+  /* ### Primary */
+
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ### Font */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
